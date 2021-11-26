@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    form { line-height: 1.5em; margin: 36px 24px; }
+    input, select { font-size: 0.9rem; }
+    button { font-size: 1rem; }
+    label { margin-right: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+
+    <label for="ip-name">이름</label>
+    <input id="ip-name" type="text" placeholder="이름 입력해주세요">
+    <br>
+    <label for="ip-pw">비밀번호</label>
+    <input id="ip-pw" type="password" placeholder="비밀번호를 입력해주세요" maxlength="10">
+    <br>
+    <label for="ip-age">나이</label>
+    <input id="ip-age" type="number" placeholder="나이를 입력해주세요">
+    <br>
+    <label for="ip-married">기혼</label>
+    <input id="ip-married" type="checkbox" checked>
+    <br>
+    <label>역할</label>
+    <input id="ip-dev" name="role" type="radio" checked>
+    <input id="ip-design" name="role" type="radio">
+    <input id="manager" name="role" type="radio">
+    <br>
+    <label for="ip-file">첨부</label>
+    <input id="ip-file" type="file" multiple>
+    <br>
+    <label for="ip-dep">소속</label>
+    <select id="ip-dep">
+      <option>운영팀</opiton>
+      <option value="mkt">마케팅팀</opiton>
+      <option value="frt">프론트엔드팀</opiton>
+      <option value="bck">백엔드팀</opiton>
+      <option value="tst">테스트팀</opiton>
+      <option value="mnt">유지보수팀</opiton>
+    </select>
+    <br>
+    <br>
+    <label for="intro">소개</label>
+    <textarea id="intro" rows="5"></textarea>
+    <br>
+    <br>
+    <button type="button">제출</button>
+    <button type="button">취소</button>
+</body>
+</html>
